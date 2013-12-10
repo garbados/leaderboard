@@ -3,5 +3,5 @@
     "user": "",
     "pass": ""
   },
-  "database_url": "http://localhost:5984/leaderboard"
+  "database_url": "TODO: Set me to the URL of your intended database"
 }

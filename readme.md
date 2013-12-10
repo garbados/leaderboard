@@ -4,15 +4,28 @@ A generic leaderboard. Use it to power your Hackernews clone, your personal Subr
 
 ## Installation
 
-    git clone [this]
+    git clone git@github.com:garbados/leaderboard.git
     cd leaderboard
     npm install
     ./todo.sh # set all the config values marked TODO
     grunt deploy
 
-## Configuration
+## Usage
 
-TODO
+Leaderboard uses views to format the data in your database, so regardless of the shape of your data, you can write views to emit the proper data. tl;dr **anything can be a leaderboard.**
+
+To find out what to configure to make it work for your data, run `./todo.sh` and edit the files it points out. Then, `grunt deploy`, and you're good to go!
+
+## Item Sorting
+
+Leaderboard's frontend code handles four kinds of sorting of content:
+
+* "hot", based on the same popularity algorithm as Reddit. Useful for HackerNews-like leaderboards.
+* "confidence", based on the algorithm Reddit uses to sort comments. Useful for game leaderboards by intelligently favoring well-performing items, regardless of how old those items are.
+* "best", which sorts content by the sum of all votes for or against them.
+* "new", which sorts content by age.
+
+Big props to [Amir Salihefendic](http://amix.dk/) and their [How Reddit ranking algorithms work](http://amix.dk/blog/post/19588) article, which I used in generating the "hot" and "confidence" algorithms.
 
 ## Types
 
