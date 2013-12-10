@@ -1,0 +1,7 @@
+<nav role="navigation" ng-controller="NavCtrl" class="container"> 
+  <ul class="nav nav-pills nav-justified">
+    <li ng-repeat="link in links" ng-class="{ active: isActive(link) }">
+      <a href="#/{{ link }}">{{ link }}</a>
+    </li>
+  </ul>
+</nav>

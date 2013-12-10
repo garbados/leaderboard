@@ -1,0 +1,10 @@
+<div class="row" ng-controller="ItemCtrl" ng-init="get(post.id)">
+  <div class="col-md-12">
+    <h1>{{ item.title }}</h1>
+    <p>
+      <span ng-controller="VoteCtrl" ng-init="get(post.id)">{{ score }} points</span>
+      |
+      <span>Posted <span am-time-ago="item.created_at"></span></span>
+    </p>
+  </div>
+</div>

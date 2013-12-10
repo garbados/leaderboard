@@ -1,0 +1,38 @@
+{
+  "name": "leaderboard",
+  "title": "Generic Leaderboard",
+  "version": "0.0.0",
+  "description": "Sort some form of content by rank. High scores, HN-like content, etc.",
+  "homepage": "https://github.com/garbados/leaderboard/",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt travis"
+  },
+  "keywords": [],
+  "author": "Max Thayer <garbados@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/garbados/leaderboard.git"
+  },
+  "devDependencies": {
+    "matchdep": "~0.3.0",
+    "grunt": "~0.4.2",
+    "browserify": "~2.35.4",
+    "grunt-browserify": "~1.2.11",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-couch": "~1.2.3",
+    "grunt-contrib-uglify": "~0.2.7",
+    "nano": "~4.2.1",
+    "async": "~0.2.9"
+  }
+}

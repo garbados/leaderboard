@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <div ng-controller="PaginationCtrl">
+        <div ng-repeat="post in posts | orderBy:'score':true | limitTo:limit">
+          <div ng-include="'summary.html'"></div>
+        </div>
+        <button ng-show="limit < posts.length" ng-click="next()" class="btn btn-info">Show More</button>
+      </div>
+    </div>
+  </div>
+</div>
